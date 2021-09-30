@@ -1,0 +1,75 @@
+nav {
+  display: none;
+}
+
+img { 
+  border-radius: 50%; 
+  width: 200px;
+  height: 200px; 
+  border: 2px solid black;
+  margin-left: 20%;
+  margin-top: 5px;
+}
+
+.three > *
+{
+  background-color: purple;
+  height: 25px;
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.two > *
+{
+  background-color: purple;
+  height: 25px;
+  color: white;
+  padding: 15px;
+  margin-top: 25px
+}
+
+.emp {
+  height: 100px ;
+}
+
+@media only screen and (min-width: 550px) {
+  .mainlist  {
+    margin: 5px;
+    list-style-type: none;
+    display: flex; 
+    background-color: purple;
+    flex-direction: row;
+    height: 35px;  
+    color: white;
+  }
+  
+  .sublist {
+    padding-left: 40%;
+    flex-grow: 1; 
+    justify-content: space-around;
+    background: black;
+    flex-direction: row;
+    display: flex; 
+    list-style-type: none;
+  }
+
+  .three {
+    grid-area: three;    
+  }
+  img {
+    grid-area: gallery;
+    width: 200px;
+    height: 200px;
+  }
+  .two {
+    grid-area: two;
+  }
+  .above {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+  "galllery three"
+  "two two";
+  }
+}
